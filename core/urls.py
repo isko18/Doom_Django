@@ -24,6 +24,7 @@ from apps.home import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("apps.home.urls")),
+    path('', include("apps.contacts.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

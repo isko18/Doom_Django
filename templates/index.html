@@ -77,7 +77,7 @@
                     <li><a href="studio.html">STUDIO</a> <small>All About Us</small></li>
                     <li><a href="showcases.html">SHOWCASES</a> <small>Our all projects</small></li>
                     <li><a href="blog.html">BLOG</a> <small>Recent posts</small></li>
-                    <li><a href="contact.html">CONTACT</a> <small>Say hello</small></li>
+                    <li><a href="{% url 'contacts' %}">CONTACT</a> <small>Say hello</small></li>
                 </ul>
             </div>
             <!-- end inner -->
@@ -127,7 +127,7 @@
         <main>
             <aside class="left-side">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
+                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="Image" /></a>
                 </div>
                 <!-- end logo -->
                 <div class="hamburger" id="hamburger">
@@ -163,7 +163,7 @@
                         <div class="swiper-slide">
                             <video src="{% static 'videos/video01.mp4' %}" muted autoplay loop></video>
                         </div>
-                        <div class="swiper-slide" data-background="images/slide02.jpg"></div>
+                        <div class="swiper-slide" data-background="{% static 'images/slide02.jpg' %}"></div>
                     </div>
                     <!-- end swiper-wrapper -->
                     <div class="slide-progress">
@@ -182,7 +182,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><span>{{ doom.name_doom }}</span> <a href="#">DISCOVER CASE</a></div>
                         <div class="swiper-slide"><span>{{ doom.name_doom2 }}</span> <a href="#">DISCOVER// CASE</a></div>
-                        <div class="swiper-slide"><span>{{ doom.name_doom3 }}</span> <a href="#">DISCOVER CASE</a></div>
+                        <div class="swiper-slide"><span>{{ doom.name_doom3 }}</span> <a href="#">TOksonbaev</a></div>
                     </div>
                     <!-- end swiper-wrapper -->
                 </div>
@@ -197,7 +197,7 @@
                                 HOW WE MAKE <br />
                                 USER EXPERIENCES
                             </h3>
-                            <a href="#">hello@tourog.com</a>
+                            <a href="#">{{ socialnetworks.google }}</a>
                         </div>
                         <!-- end col-5 -->
                         <div class="col-lg-7 wow" data-splitting>
@@ -325,7 +325,7 @@
                 <ul>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works01.jpg" data-fancybox><img src="images/works01.jpg" alt="Image" /></a>
+                            <a href="{% static 'images/works01.jpg' %}" data-fancybox><img src="{% static 'images/works01.jpg' %}" alt="Image" /></a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>Darkness Vehicle</h3>
@@ -335,7 +335,7 @@
                     </li>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works02.jpg" data-fancybox><img src="images/works02.jpg" alt="Image" /></a>
+                            <a href="{% static 'images/works02.jpg' %}" data-fancybox><img src="{% static 'images/works02.jpg' %}" alt="Image" /></a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>Goddes Cover Art</h3>
@@ -345,7 +345,7 @@
                     </li>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works03.jpg" data-fancybox><img src="images/works03.jpg" alt="Image" /></a>
+                            <a href="{% static 'images/works03.jpg' %}" data-fancybox><img src="{% static 'images/works03.jpg' %}" alt="Image" /></a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>Hard Employee</h3>
@@ -355,7 +355,7 @@
                     </li>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works04.jpg" data-fancybox><img src="images/works04.jpg" alt="Image" /></a>
+                            <a href="{% static 'images/works04.jpg' %}" data-fancybox><img src="{% static 'images/works04.jpg' %}" alt="Image" /></a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>Sweet Berry Pie</h3>
@@ -365,7 +365,7 @@
                     </li>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works05.jpg" data-fancybox><img src="images/works05.jpg" alt="Image" /></a>
+                            <a href="{ static 'images/works05.jpg' %}" data-fancybox><img src="{% static 'images/works05.jpg' %}" alt="Image" /></a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>King of Roosters</h3>
@@ -375,7 +375,7 @@
                     </li>
                     <li>
                         <figure class="reveal-effect masker wow">
-                            <a href="images/works06.jpg" data-fancybox><img src="images/works06.jpg" alt="Image" /> </a>
+                            <a href="{% static 'images/works06.jpg' %}" data-fancybox><img src="{% static 'images/works06.jpg' %}" alt="Image" /> </a>
                         </figure>
                         <div class="caption wow" data-splitting>
                             <h3>Primero Car</h3>

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import config
 from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
 
     #apps
     'apps.home',
+    'apps.contacts',
+    'apps.telegram',
 ]
 
 MIDDLEWARE = [
@@ -128,5 +131,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/ 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
+TELEGRAM_TOKEN = config.TOKEN
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
