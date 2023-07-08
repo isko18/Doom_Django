@@ -27,9 +27,11 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool (os.environ.get('DEBUG'))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 
 
 # Application definition
@@ -132,6 +134,5 @@ MEDIA_ROOT = BASE_DIR/ 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-TELEGRAM_TOKEN = config.TOKEN
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

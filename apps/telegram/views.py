@@ -5,7 +5,7 @@ from telebot import TeleBot, types
 from .models import TelegramUser
 
 # Create your views here.
-bot = TeleBot(settings.TELEGRAM_TOKEN, threaded=False)
+bot = TeleBot(settings.TELEGRAM_BOT_TOKEN, threaded=False)
 admin_id = 5268023094
 
 @bot.message_handler(commands=['start'])
